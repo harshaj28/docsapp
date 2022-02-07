@@ -8,14 +8,12 @@ import Button from '@material-tailwind/react/Button'
 import Login from '../../components/Login';
 
 const Doc = ({ session }) => {
-    if(!session) return <Login/>
   const router = useRouter();
   const { id } = router.query;
   const [doc, setDoc] = useState(null);
 
   useEffect(() => {
-    if (!session) return <Login/>;
-    
+    if(!session) return <Login/>
     fire.firestore()
       .collection('userDocs')
       .doc(session?.user.email)
