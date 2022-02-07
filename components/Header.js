@@ -9,7 +9,7 @@ function Header() {
 
     return(
         <div className="sticky p-3 top-0 z-50 flex items-center px-5 py-3 shadow-sm bg-white">
-             <Button color="grey" buttonType="outline" rounded={true} iconOnly={true} ripple="dark" className="border-0 h-10 w-10 mr-2 hover:bg-gray-100" >
+             <Button color="grey" buttonType="outline" rounded={true} iconOnly={true} ripple="dark" className=" hidden md:inline-flex border-0 h-10 w-10 mr-2 hover:bg-gray-100" >
                   <Icon name="menu" size="2xl" /> 
              </Button> 
              <Icon name="description" size="4xl" color="blue" /> 
